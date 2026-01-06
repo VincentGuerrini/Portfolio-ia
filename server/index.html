@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincent Guerrini - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>Vincent Guerrini</h1>
+                <p class="subtitle">Software Developer</p>
+            </div>
+            <nav class="nav">
+                <a href="#about" class="nav-link">À Propos</a>
+                <a href="#skills" class="nav-link">Compétences</a>
+                <a href="#projects" class="nav-link">Projets</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="../asset/monvisage.png" alt="Vincent Guerrini" class="profile-image">
+            </div>
+            <div class="hero-text">
+                <h2 class="fade-in-up">Bienvenue sur mon portfolio</h2>
+                <p class="fade-in-up" style="animation-delay: 0.2s;">Découvrez mes projets et compétences en tant que développeur junior</p>
+            </div>
+        </div>
+        <div class="visit-counter">
+            <p>Visiteurs: <span id="visitCount">0</span></p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">À Propos</h2>
+            <div class="about-content fade-in-up">
+                <p>
+                    Bonjour! Je suis <strong>Vincent Guerrini</strong>, un développeur logiciel passionné en première année d'études en tant que Software Developer. 
+                    Je crée des solutions innovantes et je m'efforce constamment d'apprendre et de progresser dans le domaine de la programmation. 
+                    Mon objectif est de développer des applications robustes et user-friendly tout en explorant de nouvelles technologies.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">Compétences</h2>
+            <div class="skills-grid">
+                <div class="skill-card fade-in-up" style="animation-delay: 0s;">
+                    <div class="skill-icon">🐍</div>
+                    <h3>Python</h3>
+                    <p>Développement d'applications et scripts</p>
+                </div>
+                <div class="skill-card fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="skill-icon">🦀</div>
+                    <h3>Go</h3>
+                    <p>Programmation backend performante</p>
+                </div>
+                <div class="skill-card fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="skill-icon">☕</div>
+                    <h3>Java</h3>
+                    <p>Applications orientées objet</p>
+                </div>
+                <div class="skill-card fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="skill-icon">🌐</div>
+                    <h3>JavaScript</h3>
+                    <p>Développement web interactif</p>
+                </div>
+                <div class="skill-card fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="skill-icon">🎨</div>
+                    <h3>HTML & CSS</h3>
+                    <p>Design responsive et moderne</p>
+                </div>
+                <div class="skill-card fade-in-up" style="animation-delay: 0.5s;">
+                    <div class="skill-icon">📚</div>
+                    <h3>Résolution de problèmes</h3>
+                    <p>Approche analytique et créative</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">Mes Projets</h2>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-buttons fade-in-up">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="game">Jeux</button>
+                <button class="filter-btn" data-filter="program">Programmes</button>
+            </div>
+
+            <!-- Project Carousel -->
+            <div class="carousel-container fade-in-up">
+                <button class="carousel-btn prev" id="prevBtn" aria-label="Projet précédent">
+                    <span>❮</span>
+                </button>
+                
+                <div class="carousel-wrapper">
+                    <div class="carousel-track" id="carouselTrack">
+                        <!-- Projects will be dynamically inserted here -->
+                    </div>
+                </div>
+
+                <button class="carousel-btn next" id="nextBtn" aria-label="Projet suivant">
+                    <span>❯</span>
+                </button>
+            </div>
+
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators" id="indicators"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Me Contacter</h2>
+            
+            <div class="contact-content">
+                <form id="contactForm" class="contact-form fade-in-up">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Envoyer le message</button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links fade-in-up">
+                <p>Restez connecté:</p>
+                <div class="social-links">
+                    <a href="https://github.com/Yokasashii" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                        <span>📱 GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vincent-guerrini-163920374/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+                        <span>💼 LinkedIn</span>
+                    </a>
+                    <a href="mailto:vincent.dev@gmail.com" class="social-link" title="Email">
+                        <span>✉️ Email</span>
+                    </a>
+                </div>
+            </div>
+            <p class="footer-credit">
+                Portfolio créé entièrement avec l'IA | © 2026 Vincent Guerrini
+            </p>
+        </div>
+    </footer>
+
+    <!-- Hidden projects data for carousel -->
+    <div id="projectsData" style="display: none;">
+        [
+            {
+                "title": "The Hangman",
+                "description": "The classic hangman game in Go and CLI, my first solo project!",
+                "url": "https://github.com/Yokasashii/The_Hangman",
+                "category": "program",
+                "icon": "🎮"
+            },
+            {
+                "title": "The Vengeful Blade",
+                "description": "My very first game project, an RPG game in which you play a little knight who wants to take revenge on his king.",
+                "url": "https://github.com/Yokasashii/The-Vengeful-Blade",
+                "category": "game",
+                "icon": "⚔️"
+            },
+            {
+                "title": "Fighting-Tournaments",
+                "description": "A small tournament in Java, in which each player chooses their characters from among the 10 available. And fight until only one survives...",
+                "url": "https://github.com/Yokasashii/Fighting-Tournaments",
+                "category": "game",
+                "icon": "🥊"
+            },
+            {
+                "title": "PlatineThemAll-Bot",
+                "description": "About the Platine-Them-All bot supports an event created by streamer Nighting, in which several trophy hunters from PS5 games or Steam achievements seek to obtain as many as possible in three weeks.",
+                "url": "https://github.com/Yokasashii/PlatineThemAll-Bot",
+                "category": "program",
+                "icon": "🤖"
+            },
+            {
+                "title": "Portfolio IA",
+                "description": "The website you are currently viewing was created entirely with AI.",
+                "url": "https://github.com/VincentGuerrini/Portfolio---IA",
+                "category": "program",
+                "icon": "🌐"
+            },
+            {
+                "title": "Calculator",
+                "description": "My first Calculator in Golang!",
+                "url": "https://github.com/Yokasashii/Calculator",
+                "category": "program",
+                "icon": "🧮"
+            }
+        ]
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
