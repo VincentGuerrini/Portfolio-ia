@@ -1,4 +1,4 @@
-### Premier prompte :
+### 1er prompte :
 
 ```
 Hello, je doit faire un site web type portfolio entierement à l'aide de l'ia je vais donc te decrire tout ce que j'ai besoin pour que tu puisses me faire le code parfaitement comme je le veux.
@@ -35,4 +35,10 @@ J'aimerais que tu y ajoute des animations d'entrée des éléments et je veux un
 je veux que le site soit agreable a regarder alors beaucoup d'animation que ça soit au niveau du carousel ou des boutons etc.
 
 si tu as d'autre idee pour l'améliorer en plus ajoute les, je veux que le site soit parfait
+```
+
+### 2ème prompte :
+
+```
+Tu peux remplir le README avec l'explication du projet et et ce que contient le site web
 ```
