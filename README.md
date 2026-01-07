@@ -49,6 +49,7 @@ Le site est conçu pour offrir une **expérience utilisateur fluide et engageant
 **Système de filtrage:**
 - 🎮 **Tous** - Affiche tous les projets
 - 🎯 **Jeux** - Affiche uniquement les jeux (2 projets)
+ - 🎯 **Jeux** - Affiche uniquement les jeux (3 projets)
 - 💾 **Programmes** - Affiche uniquement les applications (4 projets)
 
 ### 📧 Section Contact
@@ -198,7 +199,7 @@ Le site peut être hébergé sur:
 ```javascript
 // Boutons de filtre
 - Tous: affiche les 6 projets
-- Jeux: affiche 2 projets
+- Jeux: affiche 3 projets
 - Programmes: affiche 4 projets
 ```
 

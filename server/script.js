@@ -66,7 +66,7 @@ const projectsData = [
         title: "The Hangman",
         description: "The classic hangman game in Go and CLI, my first solo project!",
         url: "https://github.com/Yokasashii/The_Hangman",
-        category: "program",
+        category: "game",
         icon: "🎮"
     },
     {
